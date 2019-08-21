@@ -43,7 +43,7 @@ public class ChitietQLNHActivity extends AppCompatActivity {
     private TextView tvbantrong;
     private TextView tvGioithieu;
     private int iD;
-    private int tien;
+    private String tien;
     private int danhGia;
     private String tennhahang;
     private String imgnhahang;
@@ -86,7 +86,7 @@ public class ChitietQLNHActivity extends AppCompatActivity {
         tennhahang = intent.getStringExtra("TENNH");
         diachi = intent.getStringExtra("DIACHINH");
         monan = intent.getStringExtra("MONANNH");
-        tien = Integer.valueOf(intent.getStringExtra("GIANH"));
+        tien = intent.getStringExtra("GIANH");
         danhGia = Integer.valueOf(intent.getStringExtra("DANHGIANH"));
         imgnhahang = intent.getStringExtra("IMGNH");
         mota = intent.getStringExtra("MOTANH");
@@ -166,13 +166,13 @@ public class ChitietQLNHActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         switch (id){
-            case R.id.itemBanAn:
-                Intent intent1 = new Intent(ChitietQLNHActivity.this,Main2Activity.class);
-                intent1.putExtra("IDNH",""+iD);
-                intent1.putExtra("NAMENH",""+tennhahang);
-                intent1.putExtra("IMGNH",imgnhahang);
-                startActivity(intent1);
-                break;
+//            case R.id.itemBanAn:
+//                Intent intent1 = new Intent(ChitietQLNHActivity.this,Main2Activity.class);
+//                intent1.putExtra("IDNH",""+iD);
+//                intent1.putExtra("NAMENH",""+tennhahang);
+//                intent1.putExtra("IMGNH",imgnhahang);
+//                startActivity(intent1);
+//                break;
             case R.id.itemSuaNH:
                 Intent intent = new Intent(ChitietQLNHActivity.this,SuaNHActivity.class);
                 intent.putExtra("ID",""+iD);

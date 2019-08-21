@@ -56,7 +56,7 @@ public class SuaNHActivity extends AppCompatActivity {
     private Button btnSuaNH;
     private RelativeLayout relativeLayout;
     private int iD;
-    private int tien;
+    private String tien;
     private int danhGia;
     private String tennhahang;
     private String imgnhahang;
@@ -183,7 +183,7 @@ public class SuaNHActivity extends AppCompatActivity {
         tennhahang = intent.getStringExtra("TENNH");
         diachi = intent.getStringExtra("DIACHINH");
         monan = intent.getStringExtra("MONANNH");
-        tien = Integer.valueOf(intent.getStringExtra("GIANH"));
+        tien =  intent.getStringExtra("GIANH");
         danhGia = Integer.valueOf(intent.getStringExtra("DANHGIANH"));
         imgnhahang = intent.getStringExtra("IMGNH");
         mota = intent.getStringExtra("MOTANH");
